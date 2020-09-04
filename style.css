@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('images/weather\ 2.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header h2{
+    font-style: italic;
+    align-items: center;
+    text-shadow: 0px 2px rgba(255,255,200, 0.3);
+}
+
+header{
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+    margin-bottom: 50px;
+}
+
+header input{
+    font-size: 1em;
+    border-radius: 5px;
+    outline: none;
+    margin: 20px 10px 1px 20px;
+}
+
+header marquee{
+    padding: 20px;
+
+}
+
+header input:focus{
+    background-color: rgba(255,255,255, 0.8);
+}
+
+p{
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 200;
+    font-style: italic;
+
+
+}
+
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.location .date{
+    color: #00004d;
+    font-size: 20px;
+
+}
+
+
+.current .temp{
+    font-size: 80px;
+    font-weight: 500;
+    margin: 20px 0px 2px 0px;
+    text-shadow: 1px 4px rgba(255,255,200, 0.7);
+}
+
+.current .temp span{
+    font-weight: 100;
+}
+
+.current .weather-description{
+    color: #00004d;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px rgba(255,255,200, 0.7);
+}
+
+.current .hi-low{
+    font-size: 20px;
+    font-weight: 200;
+    text-shadow: 0px 2px rgba(255,255,200, 0.7);
+}
+
+@media only screen and  (max-width: 768px) {
+    header{
+        height: 100px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 10px 10px;
+        margin-bottom: 50px;
+    }
+
+    header input{
+        margin-top:20px ;
+    }
+
+    p{
+        margin-top: 30px;
+        font-size: 15px;
+        font-weight: 150;
+        font-style: italic;
+        color: #fff5ee;
+    
+    }
+
+    header h2{
+        font-size: 25px;
+        font-style: italic;
+        text-shadow: 0px 2px rgba(255,255,200, 0.3);
+    }
+
+
+    .current .hi-low{
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff5ee;
+    
+}
